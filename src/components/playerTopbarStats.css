@@ -1,0 +1,220 @@
+.playerTopbarStats {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 0 0 auto;
+}
+
+.playerWallet {
+  min-height: 48px;
+  padding: 6px 8px 6px 10px;
+  border: 1px solid rgba(135, 148, 207, 0.22);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03)),
+    rgba(8, 13, 23, 0.55);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.playerWalletStat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.playerWalletStat--coins {
+  border-radius: 999px;
+  position: relative;
+}
+
+.playerWalletDivider {
+  width: 1px;
+  height: 28px;
+  background: rgba(135, 148, 207, 0.22);
+  flex: 0 0 auto;
+}
+
+.playerWalletIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.playerWalletIcon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.playerWalletIcon--rating {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(251, 191, 36, 0.22);
+}
+
+.playerWalletIcon--coins {
+  color: #2dd4bf;
+  background: rgba(45, 212, 191, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(94, 234, 212, 0.22);
+}
+
+.playerWalletCopy {
+  display: grid;
+  gap: 1px;
+  line-height: 1.1;
+}
+
+.playerWalletCopy small {
+  color: rgba(158, 167, 202, 0.92);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.playerWalletCopy strong {
+  color: #f8fafc;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.playerWalletStat--coins .playerWalletCopy strong {
+  color: #99f6e4;
+}
+
+.coinPulseRing {
+  position: absolute;
+  inset: -8px;
+  border-radius: 999px;
+  border: 1px solid rgba(94, 234, 212, 0.62);
+  pointer-events: none;
+  animation: coinWalletPulse 1.35s cubic-bezier(0.2, 0.84, 0.18, 1);
+}
+
+@keyframes coinWalletPulse {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  16% {
+    opacity: 1;
+    box-shadow:
+      0 0 0 4px rgba(134, 239, 172, 0.16),
+      0 0 22px rgba(45, 212, 191, 0.34),
+      0 0 42px rgba(56, 189, 248, 0.18);
+    transform: scale(1.05);
+  }
+
+  48% {
+    opacity: 0.92;
+    box-shadow:
+      0 0 0 8px rgba(45, 212, 191, 0.16),
+      0 0 34px rgba(45, 212, 191, 0.38),
+      0 0 62px rgba(56, 189, 248, 0.22);
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 0;
+    box-shadow:
+      0 0 0 16px rgba(45, 212, 191, 0),
+      0 0 0 rgba(45, 212, 191, 0);
+    transform: scale(1.34);
+  }
+}
+
+.playerAccount {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 4px;
+}
+
+.playerAccountCopy {
+  display: grid;
+  gap: 1px;
+  line-height: 1.1;
+  text-align: right;
+}
+
+.playerAccountCopy small {
+  color: rgba(158, 167, 202, 0.92);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.playerAccountCopy strong {
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 900;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.playerAccountAvatar {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2dd4bf, #38bdf8);
+  color: #06201d;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow:
+    0 0 0 2px rgba(8, 13, 23, 0.9),
+    0 0 0 3px rgba(56, 189, 248, 0.28);
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+.playerAccountAvatar:hover {
+  transform: translateY(-1px);
+}
+
+.playerAccountAvatar--amber {
+  background: linear-gradient(135deg, #fbbf24, #fb7185);
+}
+
+.playerAccountAvatar--violet {
+  background: linear-gradient(135deg, #a78bfa, #38bdf8);
+}
+
+.playerAccountAvatar--steel {
+  background: linear-gradient(135deg, #e2e8f0, #64748b);
+}
+
+.playerAccountAvatar--image {
+  padding: 0;
+  background: #0f172a;
+}
+
+.playerAccountAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .playerWallet {
+    display: none;
+  }
+
+  .playerAccountCopy {
+    display: none;
+  }
+}

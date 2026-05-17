@@ -1,0 +1,173 @@
+.authShell {
+  min-height: 100vh;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(69, 214, 197, 0.16), transparent 30%),
+    radial-gradient(circle at 84% 16%, rgba(255, 111, 97, 0.12), transparent 28%),
+    linear-gradient(135deg, #0b1020, #121527 52%, #191324);
+  color: #f6f7ff;
+  display: grid;
+  place-items: center;
+}
+
+.authLayout {
+  width: min(480px, 100%);
+  border: 1px solid rgba(135, 148, 207, 0.18);
+  border-radius: 28px;
+  background: rgba(12, 17, 34, 0.88);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.34);
+  overflow: hidden;
+}
+
+.authKicker {
+  margin: 26px 0 0;
+  color: #45d6c5;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.authCard {
+  padding: 40px 36px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.authBrand {
+  align-self: flex-start;
+  margin-bottom: 4px;
+  pointer-events: none;
+}
+
+.authBrand.checkersBrand {
+  cursor: default;
+}
+
+.authCard .authKicker {
+  margin: 0;
+}
+
+.authCard h2 {
+  margin: 0;
+  font-size: 38px;
+}
+
+.authText,
+.mutedText {
+  margin: 0;
+  color: #9ea7ca;
+}
+
+.authCard input {
+  width: 100%;
+  min-height: 56px;
+  padding: 0 16px;
+  border: 1px solid rgba(135, 148, 207, 0.18);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.055);
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.authCard input:focus {
+  border-color: #45d6c5;
+}
+
+.primaryAuthButton,
+.googleButton,
+.guestButton {
+  min-height: 56px;
+  border: 0;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  transition:
+    transform 0.25s,
+    background 0.25s;
+}
+
+.primaryAuthButton {
+  margin-top: 8px;
+  background: linear-gradient(135deg, #ff6f61, #5f7cff);
+  color: white;
+}
+
+.primaryAuthButton:hover,
+.googleButton:hover,
+.guestButton:hover {
+  transform: translateY(-1px);
+}
+
+.googleButton {
+  background: #f6f7ff;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.googleButton img {
+  width: 22px;
+  height: 22px;
+}
+
+.guestButton {
+  border: 1px solid rgba(135, 148, 207, 0.18);
+  background: rgba(255, 255, 255, 0.055);
+  color: white;
+}
+
+.passwordRules {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.errorText,
+.successText {
+  margin: 0;
+  font-size: 14px;
+}
+
+.errorText {
+  color: #ff8585;
+}
+
+.successText {
+  color: #45d6c5;
+}
+
+.switchAuth {
+  margin: 8px 0 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.authLink {
+  margin-left: 6px;
+  border: 0;
+  background: transparent;
+  color: white;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.authLink:hover {
+  color: #45d6c5;
+}
+
+@media (max-width: 520px) {
+  .authShell {
+    padding: 14px;
+  }
+
+  .authCard {
+    padding: 28px 22px;
+  }
+}
