@@ -62,3 +62,4 @@ Vite — build tool
 JavaScript — game logic and state management
 
 🌐 Live Demo
+https://524b9c87.checkers-arena.pages.dev
