@@ -1,65 +1,69 @@
-♟️ Checkers Arena
+# ♟️ Checkers Arena
+
 A modern, feature-rich online checkers platform where players can register, compete, and customize their experience.
-🎮 What is Checkers Arena?
-Checkers Arena is a full-featured web app that takes classic checkers to the next level. It's not just a game — it's a platform with progression, customization, and both local and AI gameplay.
-👥 Who is it for?
+
+## 🎮 What is Checkers Arena?
+
+Checkers Arena is a full-featured web app that takes classic checkers to the next level. It's not just a game — it's a platform with progression, customization, authentication, and both local and AI gameplay.
+
+## 👥 Who is it for?
+
 For anyone who loves board games and wants to enjoy checkers without installing anything — just open the browser and play. Whether you're a casual player or a competitive one, there's something for you.
-✨ Features
-🔐 Authentication
 
-Register and log in to save your progress, stats, and inventory across sessions
+## ✨ Features
 
-🎯 Match Settings
+### 🔐 Authentication
+- Register and log in with Supabase Auth
+- Save your progress, stats, inventory, and profile across sessions
+- Google OAuth and guest mode support
 
-Before every game, configure your match: choose rules, board type, and difficulty
-Supports local multiplayer and AI opponent with multiple difficulty levels
+### 🎯 Match Settings
+- Configure your match before every game
+- Choose rules, board type, and AI difficulty
+- Supports local multiplayer and AI gameplay
 
-🤖 AI Opponent
+### 🤖 AI Opponent
+- Play against AI with multiple difficulty levels
+- Great for practice and solo sessions
 
-Play against an AI with selectable difficulty — from beginner to advanced
-Great for practice or solo sessions
+### 💡 In-Game Tools
+- Move hints system
+- Restart matches anytime
+- Autosave and restore unfinished games
 
-💡 In-Game Tools
+### 📋 Daily Tasks
+- Complete daily missions to earn coins
+- Unlock rewards and progression
 
-Move hints to help you plan ahead
-Restart the game at any time
-Change settings mid-session without losing your place
+### 🏆 Leaderboard
+- Global ranking and player rating system
+- Track your competitive progress
 
-📋 Daily Tasks
+### 🛒 Shop & Inventory
+- Buy custom boards, backgrounds, and cosmetics
+- Equip items from your inventory
 
-Complete daily challenges to earn coins
-Keeps the game fresh with new goals every day
+### 👤 Profile
+- View wins, losses, and match statistics
+- Use preset or uploaded custom avatars
 
-🏆 Leaderboard
+### 📜 Match History
+- Review previous matches
+- Track improvement over time
 
-See how you rank against other players globally
-Climb the rankings by winning matches
+## 🚀 Tech Stack
 
-🛒 Shop
+- React 19
+- Vite 8
+- JavaScript
+- Supabase (Authentication + PostgreSQL Database)
+- Cloudflare Pages (Deployment)
+- localStorage
 
-Spend your coins on custom boards, backgrounds, and more
-Personalize your game experience
+## 🌐 Live Demo
 
-🎒 Inventory
-
-View all items you've purchased
-Equip different boards and backgrounds from your collection
-
-👤 Profile
-
-View your personal statistics (wins, losses, games played)
-Change your avatar — pick from existing options or upload your own
-
-📜 Match History
-
-Review all your past games
-Track your progress and improvement over time
-
-🚀 Tech Stack
-
-React — UI framework
-Vite — build tool
-JavaScript — game logic and state management
-
-🌐 Live Demo
 https://524b9c87.checkers-arena.pages.dev
+
+## 📦 GitHub Repository
+
+https://github.com/nurbolmuratov1-star/checkers-nfac
